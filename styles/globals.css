@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  /* modify a base style e.g [h1,p,label] */
+  h1 {
+    @apply text-[30px] md:text-[40] lg:text-[50px] font-bold font-mondwest;
+  }
+  h2 {
+    @apply text-[54px] font-neuebit font-bold;
+  }
+  h3 {
+    @apply font-neuebit text-[38px] font-semibold;
+  }
+  h5 {
+    @apply text-[32px] font-medium;
+  }
+  h6 {
+    @apply text-[24px] font-medium;
+  }
+  body {
+    @apply relative;
+  }
+}
+
+@layer utilities {
+  /* simple utility-base classes */
+  .pause {
+    animation-play-state: paused;
+  }
+}
+
+@layer components {
+  /* add your own extracted components */
+  .padding-x {
+    @apply px-6 sm:px-20;
+  }
+
+  .padding-y {
+    @apply py-8;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .custom-btn {
+    @apply relative flex flex-row items-center justify-center px-6 py-3 rounded-md outline-none;
+  }
+
+  .nav-link-indicator {
+    @apply h-1.5 w-1.5 bg-inspiration rounded-full -bottom-2 left-1/2 -translate-x-1/2 invisible opacity-0 transition-all;
+    @apply duration-300;
+  }
+  .nav-link:hover .nav-link-indicator,
+  .nav-link-selected .nav-link-indicator {
+    @apply visible opacity-100;
+  }
+  .nav-link:hover .nav-link-indicator::before,
+  .nav-link-selected .nav-link-indicator::before {
+    @apply -translate-x-3 opacity-100;
+  }
+  .nav-link:hover .nav-link-indicator::after,
+  .nav-link-selected .nav-link-indicator::after {
+    @apply translate-x-3 opacity-100;
+  }
+  .nav-link-indicator::before,
+  .nav-link-indicator::after {
+    content: "";
+    @apply absolute w-full h-full transition-all duration-300 rounded-full opacity-0 bg-inspiration;
+  }
+  .nav-mobile-link {
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      #000 50%
+    );
+    background-size: 230%;
+  }
+  .nav-mobile-link:hover {
+    background-position: 100%;
+    @apply -translate-x-1 text-disruption;
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .home-hero {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.56) 0%,
+        rgba(0, 0, 0, 0.56) 100%
+      ),
+      url("/assets/img/header-approach.jpg");
+    @apply bg-no-repeat bg-cover;
+  }
+  .home-hero-text h1 {
+    @apply text-center;
+  }
+  .home-hero-text h1 span {
+    @apply block text-start;
+  }
+  .home-contact-text {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.56) 0%,
+        rgba(0, 0, 0, 0.56) 100%
+      ),
+      url("/assets/img/BOwusuNyantekyi_turntabl_pre-edits_20220602_022_V2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .form-group {
+    @apply mb-5 text-start;
+  }
+  .form-group input {
+    @apply mt-3;
+  }
+
+  .paragraph-outline {
+    color: white; /* Set the text color to white */
+    text-shadow: 1px 1px 0 #b0b0ff, -1px -1px 0 #b0b0ff, 1px -1px 0 #b0b0ff,
+      -1px 1px 0 #b0b0ff; /* Apply shadows to create an outline effect */
+  }
+
+  .icon {
+    font-size: 1.6rem; /* Adjust the size as needed */
+  }
+}

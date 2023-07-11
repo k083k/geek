@@ -1,0 +1,24 @@
+.ttInputField {
+  @apply rounded-md w-full border-solid border-x-2 border-y-2 px-2 py-6 font-mondwest text-lg bg-transparent cursor-edit-cursor 
+  focus:outline focus:border-transparent focus:outline-2 focus:cursor-auto;
+}
+
+.ttInputFieldDefault {
+  @apply placeholder-gray-500 text-pixel-black outline-inspiration border-gray-300;
+}
+
+.ttInputFieldDark {
+  @apply text-white placeholder-software-grey outline-disruption border-software-grey;
+}
+
+.ttInputLabel {
+  @apply text-xl;
+}
+
+.ttInputLabelDefault {
+  @apply text-pixel-black;
+}
+
+.ttInputLabelDark {
+  @apply text-white;
+}
