@@ -70,7 +70,7 @@ const ServicesSection = () => {
               </p>
               <br />
               <p
-                className="py-2 text-xl font-extrabold cursor-pointer learn-more-link font-mondwest text-pixel-black"
+                className="py-2 text-xl font-extrabold cursor-pointer learn-more-link font-mondwest text-dark-grey"
                 onClick={() => openModal("development")}
               >
                 Learn More <span className="arrow">&#8594;</span>
@@ -102,7 +102,7 @@ const ServicesSection = () => {
               </p>
               <br />
               <p
-                className="py-2 text-xl font-extrabold cursor-pointer learn-more-link font-mondwest text-pixel-black"
+                className="py-2 text-xl font-extrabold cursor-pointer learn-more-link font-mondwest text-dark-grey"
                 onClick={() => openModal("projectManagement")}
               >
                 Learn More <span className="arrow">&#8594;</span>
@@ -165,7 +165,7 @@ const ServicesSection = () => {
               </p>
               <br />
               <p
-                className="py-2 text-xl font-extrabold cursor-pointer learn-more-link font-mondwest text-pixel-black"
+                className="py-2 text-xl font-extrabold cursor-pointer learn-more-link font-mondwest text-dark-grey"
                 onClick={() => openModal("partnership")}
               >
                 Learn More <span className="arrow">&#8594;</span>
@@ -196,7 +196,7 @@ const ServicesSection = () => {
               </p>
               <br />
               <p
-                className="py-2 text-xl font-extrabold cursor-pointer learn-more-link font-mondwest text-pixel-black"
+                className="py-2 text-xl font-extrabold cursor-pointer learn-more-link font-mondwest text-dark-grey"
                 onClick={() => openModal("softwareConsultancy")}
               >
                 Learn More <span className="arrow">&#8594;</span>

@@ -22,6 +22,7 @@ module.exports = {
         "home-hero-number": "url('/assets/img/hero-number-bg.svg')",
       },
       colors: {
+        "dark-grey": "#6d6e71",
         "pixel-black": "#000000",
         "software-grey": "#efefef",
         inspiration: "#b0b0ff",
