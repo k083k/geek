@@ -62,7 +62,9 @@ deploy-dev:
   stage: deploy-dev
   when: manual
   image:
-    name: $DOCKER_REGISTRY/$DEVOPS_IMAGE:$DEVOPS_IMAGE_VERSION    
+    name: $DOCKER_REGISTRY/$DEVOPS_IMAGE:$DEVOPS_IMAGE_VERSION
+  only:
+    - dev      
   variables:
     NAMESPACE: ${APP_NAME}-dev
     RELEASE_NAME: ${APP_NAME}-dev
