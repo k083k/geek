@@ -58,7 +58,7 @@ ingress:
   tls:
     - secretName: turntabl-net-certs
       hosts:
-        - geek.apps.turntabl.net
+        - geek.dev-apps.turntabl.io
 
 
 resources: {}

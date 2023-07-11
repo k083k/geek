@@ -64,7 +64,7 @@ deploy-dev:
   image:
     name: $DOCKER_REGISTRY/$DEVOPS_IMAGE:$DEVOPS_IMAGE_VERSION
   only:
-    - dev  
+    - dev      
   variables:
     NAMESPACE: ${APP_NAME}-dev
     RELEASE_NAME: ${APP_NAME}-dev
@@ -73,14 +73,14 @@ deploy-dev:
     - helm upgrade --install -f helm/values-dev.yaml
       --set image.repository=${DOCKER_REGISTRY}/${APP_NAME}
       --set image.tag=${APP_VERSION}
-      --set "ingress.hosts[0].host=${APP_NAME}.apps.turntabl.net"
+      --set "ingress.hosts[0].host=${APP_NAME}.dev-apps.turntabl.io"
       --set "ingress.hosts[0].paths[0].path=/"
       --set "ingress.hosts[0].paths[0].pathType=ImplementationSpecific"
       --set "ingress.tlsName=${TLS_NAME_DEV}"
       --set "ingress.tlsCrt=${TLSCERT_DEV}"
       --set "ingress.tlsKey=${TLSKEY_DEV}"
       ${APP_CONFIG} --create-namespace -n ${RELEASE_NAME} ${RELEASE_NAME} ./helm
-    - echo "Application URL=https://${APP_NAME}.apps.turntabl.net"
+    - echo "Application URL=https://${APP_NAME}.dev-apps.turntabl.io"
 
 
 deploy-prd:
@@ -100,11 +100,11 @@ deploy-prd:
     - helm upgrade --wait --install -f helm/values-prd.yaml
       --set image.repository=${DOCKER_REGISTRY}/${APP_NAME}
       --set image.tag=${APP_VERSION}
-      --set "ingress.hosts[0].host=${APP_NAME}.apps.turntabl.net"
+      --set "ingress.hosts[0].host=${APP_NAME}.apps.turntabl.io"
       --set "ingress.hosts[0].paths[0].path=/"
       --set "ingress.hosts[0].paths[0].pathType=ImplementationSpecific"
       --set "ingress.tlsName=${TLS_NAME_PRD}"
       --set "ingress.tlsCrt=${TLSCERT_PRD}"
       --set "ingress.tlsKey=${TLSKEY_PRD}"
       ${APP_CONFIG} --create-namespace -n ${RELEASE_NAME} ${RELEASE_NAME} ./helm
-    - echo "Application URL=https://${APP_NAME}.apps.turntabl.net"
+    - echo "Application URL=https://${APP_NAME}.apps.turntabl.io"
