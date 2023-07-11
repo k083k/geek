@@ -73,14 +73,14 @@ deploy-dev:
     - helm upgrade --install -f helm/values-dev.yaml
       --set image.repository=${DOCKER_REGISTRY}/${APP_NAME}
       --set image.tag=${APP_VERSION}
-      --set "ingress.hosts[0].host=${APP_NAME}.dev.turntabl.net"
+      --set "ingress.hosts[0].host=${APP_NAME}.apps.turntabl.net"
       --set "ingress.hosts[0].paths[0].path=/"
       --set "ingress.hosts[0].paths[0].pathType=ImplementationSpecific"
       --set "ingress.tlsName=${TLS_NAME_DEV}"
       --set "ingress.tlsCrt=${TLSCERT_DEV}"
       --set "ingress.tlsKey=${TLSKEY_DEV}"
       ${APP_CONFIG} --create-namespace -n ${RELEASE_NAME} ${RELEASE_NAME} ./helm
-    - echo "Application URL=https://${APP_NAME}.dev.turntabl.net"
+    - echo "Application URL=https://${APP_NAME}.apps.turntabl.net"
 
 
 deploy-prd:
