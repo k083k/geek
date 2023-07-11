@@ -58,7 +58,7 @@ ingress:
   tls:
     - secretName: turntabl-net-certs
       hosts:
-        - geek.apps.turntabl.net
+        - geek.apps.turntabl.io
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
