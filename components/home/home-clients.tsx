@@ -18,8 +18,7 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import "swiper/css/bundle";
 import { useEffect, useState } from "react";
-import { partners } from "../../core/shared/constants/home";
-import Partnership from "../pages/services/partnerships";
+import { partners } from "@/core/shared/constants/home";
 
 export default function HomeClients() {
   const [swiper, setSwiper] = useState<Swiper | null>(null);

@@ -30,6 +30,7 @@ export default function BlogPostCard(props: { post: Props }) {
       <Link
         href={post.link}
         className="text-pixel-black text-center mt-3 inline-block hover:underline"
+        target={"_blank"}
       >
         Read more &#10230;
       </Link>
