@@ -171,14 +171,14 @@ export const blogPosts = [
 export const histories = [
   {
     title: "Global Code",
-    date: "Jan 2019 - Feb 2020",
+    date: "2017 - Present",
     icon: "image",
     iconBg: "#383E56",
     story: "A short story about Global Code",
   },
   {
     title: "Turntabl",
-    date: "Jan 2019 - Feb 2020",
+    date: "2019 - Present",
     icon: "image",
     iconBg: "#383E56",
     story: "A short story about Turntabl",
