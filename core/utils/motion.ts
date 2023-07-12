@@ -100,3 +100,21 @@ export const staggerContainer = (
     },
   };
 };
+
+export const scale = () => {
+  return {
+    hidden: {
+      scale: 0
+    },
+    show: {
+      scale: 1,
+      transition: {
+        delay: 0.1,
+        duration: 0.5,
+        type: "spring",
+        stiffness: 300,
+        damping: 10,
+      },
+    }
+  }
+}

@@ -13,7 +13,7 @@ import { withAnimate } from '../hoc'
 const Footer = () => {
   return (
     <footer className='flex flex-col text-white bg-pixel-black'>
-      <div className="max-w-[100rem] mx-auto">
+      <div className="w-[100%] mx-auto">
         <div className='flex flex-wrap justify-between gap-5 py-10 max-md:flex-col'>
           {/* left content */}
           <div className='flex flex-col items-start justify-start gap-6'>
