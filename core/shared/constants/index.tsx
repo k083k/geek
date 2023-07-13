@@ -174,14 +174,14 @@ export const histories = [
     date: "2017 - Present",
     icon: "image",
     iconBg: "#383E56",
-    story: "A short story about Global Code",
+    story: "Global Code began in 2017 in Koforidua, Ghana. Eighteen students and one instructor navigated (and built!) a curriculum based on practical, real-world technology that software engineers use every day: linux, python, git, and platforms like heroku. Global Code is impact-driven and reaches significantly more students each year, with the help of volunteering instructors.",
   },
   {
     title: "Turntabl",
     date: "2019 - Present",
     icon: "image",
     iconBg: "#383E56",
-    story: "A short story about Turntabl",
+    story: "In 2019, a pioneering software engineering agency was established with a strong foothold in both Ghana and the UK, creating a powerful cross-cultural collaboration. Fueled by a shared passion for technology and a drive for excellence, the founders embarked on a mission to revolutionize the software engineering landscape. From day one, the agency set out to bridge the gap between emerging technologies and practical business solutions, catering to clients across industries and geographies. With a diverse team of talented engineers and developers, the agency quickly gained recognition for its innovative approach, delivering cutting-edge software solutions that exceeded client expectations.",
   },
 ];
 
