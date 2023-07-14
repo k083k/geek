@@ -14,7 +14,7 @@ const AnimatedContactFormSection = () => {
   return (
     <div className="min-h-[calc(100vh-3.5rem)] w-full flex flex-col items-center justify-center">
       <div className="h-[50vh] w-full -z-10 relative">
-        <Image src={ContactUsBg} alt="contact-us" fill className="object-cover " />
+        <Image priority src={ContactUsBg} alt="contact-us" fill className="object-cover " />
         <div className="absolute top-0 left-0 w-full h-full bg-black/60" />
       </div>
       <div className="max-w-[100rem]">

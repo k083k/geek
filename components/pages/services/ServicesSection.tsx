@@ -45,6 +45,7 @@ const ServicesSection = () => {
                   src="/assets/img/tt2.jpeg"
                   width={650}
                   height={650}
+                  priority
                   alt="Two Developers Working"
                 />
               </motion.div>
@@ -119,6 +120,7 @@ const ServicesSection = () => {
                   src="/assets/img/tt11.jpeg"
                   width={650}
                   height={650}
+                  priority
                   alt="Several Team members in a Meeting"
                 />
               </motion.div>
@@ -140,6 +142,7 @@ const ServicesSection = () => {
                   src="/assets/img/tt1.jpeg"
                   width={650}
                   height={650}
+                  priority
                   alt="Team Photo"
                 />
               </motion.div>
@@ -213,6 +216,7 @@ const ServicesSection = () => {
                   src="/assets/img/tt4.jpeg"
                   width={650}
                   height={650}
+                  priority
                   alt="Pair Reveiwing code together"
                 />
               </motion.div>

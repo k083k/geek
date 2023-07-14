@@ -71,7 +71,7 @@ export default function HomeClients() {
                       <q>{review.review}</q>
                     </p>
                     <div className="flex items-center py-5">
-                      <Image
+                      <Image priority
                         src={review.image}
                         width={52}
                         height={52}
